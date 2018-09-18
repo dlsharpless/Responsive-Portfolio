@@ -6,6 +6,7 @@ body {
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    position: static;
 }
 
 #banner {
@@ -16,7 +17,7 @@ h1 {
 
 #navbanner {
     margin: 0px auto;
-    width: 960px;
+    width: 560px;
 }
 
 #navbar {
@@ -43,7 +44,7 @@ h1 {
     background-color: #ffffff;
     border: solid 1px #dddddd;
     margin: 30px auto;
-    width: 920px;
+    width: 520px;
     padding: 10px 20px;
     overflow: auto;
 }
@@ -92,14 +93,14 @@ hr {
 
 input {
     height: 20px;
-    width: 910px;
+    width: 510px;
     margin-top: 5px;
     padding-left: 5px;
 }
 
 textarea {
     height: 200px;
-    width: 910px;
+    width: 510px;
     margin-top: 5px;
     padding-left: 6px;
     padding-top: 6px;
@@ -125,4 +126,65 @@ button {
     font-size: 12px;
     text-align: center;
     padding: 1px;
+    width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    #navbanner {
+        width: 600px;
+    }
+    #content {
+        width: 560px;
+    }
+    input {
+        width: 550px;
+    }
+    textarea {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #navbanner {
+        width: 720px;
+    }
+    #content {
+        width: 680px;
+    }
+    input {
+        width: 670px;
+    }
+    textarea {
+        width: 670px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #navbanner {
+        width: 900px;
+    }
+    #content {
+        width: 860px;
+    }
+    input {
+        width: 850px;
+    }
+    textarea {
+        width: 850px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #navbanner {
+        width: 960px;
+    }
+    #content {
+        width: 920px;
+    }
+    input {
+        width: 910px;
+    }
+    textarea {
+        width: 910px;
+    }
 }
